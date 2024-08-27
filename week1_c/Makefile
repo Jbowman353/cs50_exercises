@@ -9,3 +9,10 @@ HELLO_NAME_OBJS = $(HELLO_NAME_SRCS:.c=.o)
 
 hello_name: $(HELLO_NAME_OBJS)
 	$(CC) $(CFLAGS) -o $@ $(HELLO_NAME_OBJS) $(LDLIBS)
+
+# mario
+MARIO_SRCS = mario.c
+MARIO_OBJS = $(MARIO_SRCS:.c=.o)
+
+mario: $(MARIO_OBJS)
+	$(CC) $(CFLAGS) -o $@ $(MARIO_OBJS) $(LDLIBS)
