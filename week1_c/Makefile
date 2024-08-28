@@ -16,3 +16,10 @@ MARIO_OBJS = $(MARIO_SRCS:.c=.o)
 
 mario: $(MARIO_OBJS)
 	$(CC) $(CFLAGS) -o $@ $(MARIO_OBJS) $(LDLIBS)
+
+# credit
+CREDIT_SRCS = credit.c
+CREDIT_OBJS = $(CREDIT_SRCS:.c=.o)
+
+credit: $(CREDIT_OBJS)
+	$(CC) $(CFLAGS) -o $@ $(CREDIT_OBJS) $(LDLIBS)
