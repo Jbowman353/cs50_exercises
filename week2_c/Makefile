@@ -8,3 +8,10 @@ SCRABBLE_OBJS = $(SCRABBLE_SRCS:.c=.o)
 
 scrabble: $(SCRABBLE_OBJS)
 	$(CC) $(CFLAGS) -o $@ $(SCRABBLE_OBJS) $(LDLIBS)
+
+# readability
+READABILITY_SRCS = readability.c
+READABILITY_OBJS = $(READABILITY_SRCS:.c=.o)
+
+readability: $(READABILITY_OBJS)
+	$(CC) $(CFLAGS) -o $@ $(READABILITY_OBJS) $(LDLIBS)
